@@ -165,7 +165,7 @@
     <main>
       <div class="section">
         <h2>請輸入您的帳號及密碼</h2>
-        <form method="POST" action="login1.php">
+        <form method="POST" action="logindb.php">
           <label for="username">使用者編號:</label>
           <input type="text" id="ID" name="ID" required />
 

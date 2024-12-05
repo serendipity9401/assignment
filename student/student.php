@@ -172,7 +172,7 @@
 
 <body background="home-bg.jpg">
   <nav>
-    <h1><a href="main.php">首頁</a></h1>
+    <h1><a href="\homework\main.php">首頁</a></h1>
   </nav>
   <table class="section">
     <tr align="center">
