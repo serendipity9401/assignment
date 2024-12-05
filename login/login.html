@@ -33,27 +33,19 @@
     nav h1 {
       margin: 0;
       padding: 20px;
-      /* 內邊距 */
       text-align: center;
-      /* 文字置中 */
       font-size: 1.8em;
-      /* 字體大小 */
       color: white;
-      /* 文字顏色 */
     }
 
     nav a {
       color: white;
-      /* 連結文字顏色 */
       text-decoration: none;
-      /* 移除底線 */
     }
 
     nav a:hover {
       color: #4caf50;
-      /* 滑鼠懸停變色 */
       transition: color 0.3s ease;
-      /* 平滑變色效果 */
     }
 
     header h1 {
@@ -63,7 +55,6 @@
 
     .container {
       background-color: rgba(255, 255, 255, 0.9);
-      /* 增加背景透明度 */
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -157,7 +148,6 @@
   <nav>
     <h1><a href="main.php">首頁</a></h1>
   </nav>
-  <!-- <a href="login.php" class="login-button">vup </a> -->
   <div class="container">
     <header>
       <h1>登入-產業實習平台</h1>
@@ -172,12 +162,6 @@
           <label for="password">密碼:</label>
           <input type="password" id="password" name="password" required />
 
-          <!-- <label for="role">身份:</label>
-          <select id="role" name="role" required>
-            <option value="admin">管理者</option>
-            <option value="department">系所秘書</option>
-            <option value="student">學生</option>
-          </select> -->
           <h3>選擇想訂閱的公告標籤:</h3>
           <label>製造業
             <input type="checkbox" id="tags" name="tags" value="製造業">
@@ -188,13 +172,10 @@
           <label>500大企業
             <input type="checkbox" id="tags" name="tags" value="500大企業">
           </label>
+          
           <button type="submit">登入</button>
           <a href="new.html" class="login-button">新增使用者</a>
         </form>
-        <?php
-        // session_start();
-        // $session['tags'];
-        ?>
       </div>
     </main>
 

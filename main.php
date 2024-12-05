@@ -172,7 +172,7 @@
 	    }
 		else
 		{
-			echo "<a href='/homework/login/login.html' class='login-button'>登入</a>";
+			echo "<a href='login/login.html' class='login-button'>登入</a>";
 		}
 	  ?>
     <div class="container">

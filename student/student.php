@@ -16,7 +16,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      /* height: 100vh; */
       margin: 0;
     }
 
@@ -28,7 +27,6 @@
       left: 0;
       z-index: 1000;
       opacity: .7;
-      /* margin-bottom: 30px; */
     }
 
     nav h1 {
@@ -67,7 +65,6 @@
     input[type="date"] {
       width: 93%;
       margin-top: 5px;
-      /* padding: 10px; */
       border: 1px solid #ccc;
       border-radius: 4px;
     }
@@ -88,11 +85,9 @@
       background-color: #4caf50;
       color: white;
       border: none;
-      /* padding: 10px 15px; */
       border-radius: 4px;
       margin-top: 10px;
       cursor: pointer;
-      /* width: 100%; */
     }
 
 

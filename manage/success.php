@@ -16,8 +16,6 @@
   $content = $_POST["content"];
   $newsdate = $_POST["newsdate"];
   $tags = $_POST["tags"];
-  $but = $_POST["but"];
-  //$del = $_POST["del"];
   $link = mysqli_connect('localhost', 'root', '12345678', 'school');
   $sql = "insert into manage (newsid, title, content, newsdate,tags) values ('$newsid', '$title', '$content', '$newsdate','$tags')";
   if (mysqli_query($link, $sql)) {

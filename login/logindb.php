@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="refresh" content="2; url=login.html"> -->
     <title>登入-產業實習平台</title>
 </head>
 <body background="home-bg.jpg">
@@ -24,7 +23,7 @@
         echo '<meta http-equiv="refresh" content="2; url=/homework/main.php">';
     }else{
         echo "<h1 align='center'>登入失敗</h1>";
-        echo '<meta http-equiv="refresh" content="2; url=login.php">';
+        echo '<meta http-equiv="refresh" content="2; url=login.html">';
     }
     ?>
 </body>
