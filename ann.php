@@ -74,7 +74,7 @@
 
 <body background="home-bg.jpg">
     <nav>
-        <h1><a href="/期中作業/main.php">首頁</a></h1>
+        <h1><a href="main.php">首頁</a></h1>
     </nav>
     <div class="announcement">
         <?php
