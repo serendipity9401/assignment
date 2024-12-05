@@ -168,7 +168,7 @@
     // echo $_SESSION['level'];
 	    if(isset($_SESSION['name']))
 		{
-			echo "<span class='login-button'>您好，", $_SESSION['name'], " <a href='logout.php' > [登出]</a></span>";
+			echo "<span class='login-button'>您好，", $_SESSION['name'], $_SESSION['level']," <a href='logout.php' > [登出]</a></span>";
 	    }
 		else
 		{
