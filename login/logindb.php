@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登入-產業實習平台</title>
+    <style>
+        body {
+            background-size: cover;
+        }
+    </style>
 </head>
 <body background="home-bg.jpg">
 <?php

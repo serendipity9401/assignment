@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="2; url=main.php">
     <title>通知</title>
+    <style>
+        body {
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body background="home-bg.jpg">

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="3; url=student.php">
     <title>Document</title>
+    <style>
+        body {
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body background="home-bg.jpg">

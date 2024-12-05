@@ -16,6 +16,7 @@
             align-items: center;
             justify-content: flex-start;
             min-height: 100vh;
+            background-size: cover;
         }
 
         nav {
