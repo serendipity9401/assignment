@@ -28,12 +28,9 @@
             opacity: .7;
         }
 
-        nav h1 {
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-            font-size: 1.8em;
-            color: white;
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #fff !important;
         }
 
         nav a {
