@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>公告</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
   <style>
     body {
       background: url("home-bg.jpg") no-repeat center center fixed;
@@ -186,7 +188,7 @@
     while ($row = mysqli_fetch_array($result)) {
       echo "<tr>
           <td>{$row[0]}</td>
-          <td><a href='/期中作業/ann.php?newsid={$row['newsid']}'>{$row[1]}</a></td>
+          <td><a href='/homework/ann.php?newsid={$row['newsid']}'>{$row[1]}</a></td>
           <td>{$row[3]}</td>
           <td>{$row[4]}</td>
           <td>

@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>產業實習平台</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <style>
         body {
             background: url("home-bg.jpg") no-repeat center center fixed;
@@ -142,7 +144,7 @@
 
 <body>
     <nav>
-        <h1><a href="/期中作業/main.php">首頁</a></h1>
+        <h1><a href="/homework/main.php">首頁</a></h1>
     </nav>
     <h1>新增公告</h1>
     <form method="POST" action="success.php">
