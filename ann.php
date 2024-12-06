@@ -1,67 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>公告頁面</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            min-height: 100vh;
+            background: url('home-bg.jpg') no-repeat center center fixed;
             background-size: cover;
+            color: #333;
         }
 
-        nav {
-            background-color: #333;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            opacity: .7;
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        nav h1 {
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-            font-size: 1.8em;
-            color: white;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            color: #4caf50;
-            transition: color 0.3s ease;
+        .navbar-brand {
+            font-size: 1.5rem;
+            color: #fff !important;
         }
 
         .announcement {
-            max-width: 800px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 130px;
+            margin: 50px auto;
             padding: 30px;
-            text-align: left;
+            max-width: 800px;
         }
 
         .announcement h1 {
             font-size: 2rem;
             margin-bottom: 15px;
-            color: #4caf50;
-            border-bottom: 2px solid #4caf50;
+            color: black;
+            border-bottom: 2px solid #007bff;
             padding-bottom: 15px;
         }
 
@@ -70,18 +45,43 @@
             line-height: 1.6;
             margin: 10px 0;
         }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 15px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 
-<body background="home-bg.jpg">
-    <nav>
-        <h1><a href="main.php">首頁</a></h1>
+<body>
+    <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+        <div class="container">
+            <a class="navbar-brand" href="/homework/main.php">產業實習平台</a>
+            <div class="d-flex">
+                <?php
+                if ($_SESSION['name']) {
+                    echo "<span class='navbar-text text-white me-3'>您好，", $_SESSION['name'], $_SESSION['level'], "</span>";
+                    echo "<a href='logout.php' class='btn btn-outline-danger me-2'>登出</a>";
+                    echo "<a href='link.php' class='btn btn-outline-primary'>管理</a>";
+                } else {
+                    echo "<button type='button' class='btn btn-primary' onclick=\"window.location.href='login/login.html'\">登入</button>";
+                }
+                ?>
+            </div>
+        </div>
     </nav>
+
     <div class="announcement">
         <?php
         $newsid = $_GET["newsid"];
         $link = mysqli_connect('localhost', 'root', '12345678', 'school');
-        $sql = "select * from manage where newsid='$newsid'";
+        $sql = "SELECT * FROM manage WHERE newsid='$newsid'";
         $result = mysqli_query($link, $sql);
         while ($row = mysqli_fetch_array($result)) {
             echo "<h1>{$row[1]}</h1>";
@@ -90,7 +90,7 @@
         ?>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
